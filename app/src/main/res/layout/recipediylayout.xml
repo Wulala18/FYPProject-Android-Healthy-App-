@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    android:id="@+id/container2"
+    android:layout_margin="8dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_height="76dp">
+
+
+        <ImageView
+            android:id="@+id/date_icon"
+            android:layout_width="58dp"
+            android:layout_height="49dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="14dp"
+            app:srcCompat="@drawable/foodcircle" />
+
+
+        <TextView
+            android:id="@+id/showdiyrecipename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="40dp"
+            android:layout_toEndOf="@+id/date_icon"
+            android:text="Hello"
+            android:textColor="@color/md_black_1000"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TBtime"
+            android:layout_width="153dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-17dp"
+            android:layout_marginBottom="6dp"
+            android:layout_toEndOf="@+id/date_icon"
+            android:ellipsize="end"
+            android:text="Created Date:"
+            android:textColor="@color/md_black_1000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/showtime"
+            android:layout_width="146dp"
+            android:layout_height="18dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="61dp"
+            android:layout_marginBottom="13dp"
+            android:layout_toEndOf="@+id/date_icon"
+            android:ellipsize="end"
+            android:text=""
+            android:textColor="@color/md_black_1000"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

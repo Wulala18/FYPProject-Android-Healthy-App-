@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/md_white_1000"
+    app:cardCornerRadius="20dp"
+    android:id="@+id/recipecontain"
+    android:layout_margin="8dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/menu_image"
+            android:layout_width="match_parent"
+            android:layout_height="174dp"
+            app:srcCompat="@drawable/healthyfood"
+            android:scaleType="centerCrop"
+            android:contentDescription="FoodPhoto"
+            />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/showrecipename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/baloo"
+            android:text="Show Name"
+            android:textAlignment="center"
+            android:textColor="@color/md_black_1000"
+            android:textSize="20sp"
+         />
+
+        <View
+            android:id="@+id/divinder_line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/showrecipename"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/holo_blue_dark" />
+
+        <TextView
+            android:id="@+id/recipecalorieview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divinder_line"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/palanquin_dark_medium"
+            android:text="Calories"
+            android:textAllCaps="true"
+            android:textColor="@color/md_cyan_500"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/showrecipecalories"
+            android:layout_width="@dimen/_55sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recipecalorieview"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/walter_turncoat"
+            android:gravity="center"
+            android:text="40"
+            android:textColor="@color/md_cyan_500"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/recipesugarcontain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divinder_line"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/palanquin_dark_medium"
+            android:layout_toEndOf="@+id/recipecalorieview"
+            android:textAllCaps="true"
+            android:text="Sugar"
+            android:textStyle="bold"
+            android:textColor="@color/md_yellow_800"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/showrecipesugar"
+            android:layout_width="@dimen/_42sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recipesugarcontain"
+            android:layout_marginStart="24dp"
+            android:layout_toEndOf="@+id/showrecipecalories"
+            android:fontFamily="@font/walter_turncoat"
+            android:gravity="center"
+            android:text="40"
+            android:textSize="25sp"
+            android:textColor="@color/md_yellow_800"
+            />
+
+        <TextView
+            android:id="@+id/Proteinn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divinder_line"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@+id/recipesugarcontain"
+            android:fontFamily="@font/palanquin_dark_medium"
+            android:textAllCaps="true"
+            android:text="Protein"
+            android:textColor="@color/md_green_500"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/showrecipeprotein"
+            android:layout_width="@dimen/_53sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Proteinn"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/showrecipesugar"
+            android:fontFamily="@font/walter_turncoat"
+            android:textColor="@color/md_green_500"
+            android:gravity="center"
+            android:text="40"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/recipefatcontain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divinder_line"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@+id/Proteinn"
+            android:fontFamily="@font/palanquin_dark_medium"
+            android:text="Fats"
+            android:textAllCaps="true"
+            android:textColor="@color/md_red_500"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/showrecipefat"
+            android:layout_width="@dimen/_52sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recipefatcontain"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@+id/showrecipeprotein"
+            android:fontFamily="@font/walter_turncoat"
+            android:gravity="center"
+            android:text="40"
+            android:textColor="@color/md_red_500"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+
+
+</com.google.android.material.card.MaterialCardView>

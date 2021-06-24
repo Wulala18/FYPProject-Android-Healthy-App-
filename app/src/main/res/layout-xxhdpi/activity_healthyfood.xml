@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Functions.FoodRecipe.FoodNutrtionSearch.healthyfood">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/searchback_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-4dp"
+        android:background="@drawable/shape"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+    <com.mancj.materialsearchbar.MaterialSearchBar
+        android:id="@+id/searchbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchback_toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        app:mt_placeholderColor="@color/md_black_1000"
+        app:mt_textColor="@color/md_black_1000"
+        app:mt_hint="Search"
+        app:mt_searchBarColor="@color/md_blue_grey_100"
+        app:mt_speechMode="false">
+
+    </com.mancj.materialsearchbar.MaterialSearchBar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyce_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchbar"
+        android:layout_marginTop="0dp">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

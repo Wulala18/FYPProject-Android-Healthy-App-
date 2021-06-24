@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000"
+    tools:context=".Functions.WorkoutCategories.WorkOut">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/workout_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="141dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:text="WorkOut"
+        android:textAllCaps="true"
+        android:textColor="@color/md_black_1000"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline7">
+
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textView0"
+        android:layout_width="179dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:text="Categories"
+        android:textAllCaps="true"
+        android:textColor="@color/md_black_1000"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline7">
+
+    </TextView>
+
+    <ImageView
+        android:layout_width="@dimen/_125sdp"
+        android:layout_height="@dimen/_105sdp"
+        android:src="@drawable/gym_menu_picture"
+        app:layout_constraintBottom_toTopOf="@+id/chestworkout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/workout_toolbar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/chestworkout"
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:onClick="btn_chest"
+        android:src="@drawable/chestworkout"
+        app:layout_constraintBottom_toTopOf="@+id/armworkout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.879" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="chest"
+        android:textAllCaps="true"
+        android:textColor="@color/md_black_1000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/chestworkout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/chestworkout" />
+
+    <ImageButton
+        android:id="@+id/armworkout"
+        android:layout_width="match_parent"
+        android:layout_height="122dp"
+        android:layout_marginBottom="4dp"
+        android:onClick="btn_arm"
+        android:src="@drawable/armworkout"
+        app:layout_constraintBottom_toTopOf="@+id/absworkout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arm"
+        android:textAllCaps="true"
+        android:textColor="@color/md_black_1000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/armworkout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/armworkout" />
+
+    <ImageButton
+        android:id="@+id/absworkout"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginBottom="4dp"
+        android:onClick="btn_abs"
+        android:src="@drawable/absworkout"
+        app:layout_constraintBottom_toTopOf="@+id/legworkout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abs"
+        android:textAllCaps="true"
+        android:textColor="@color/md_black_1000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/absworkout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/absworkout" />
+
+    <ImageButton
+        android:id="@+id/legworkout"
+        android:layout_width="match_parent"
+        android:layout_height="118dp"
+        android:layout_marginBottom="4dp"
+        android:onClick="btn_leg"
+        android:src="@drawable/legworkout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="leg"
+        android:textAllCaps="true"
+        android:textColor="@color/md_black_1000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/legworkout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/legworkout"
+        app:layout_constraintVertical_bias="0.571" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="56dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.fitnessapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <supports-screens>
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:anyDensity="true"
+    </supports-screens>
+
+    <application
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/fitnesslogo"
+        android:label="FitnessApp"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/fitnesslogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:ignore="ExtraText"
+        tools:replace="android:label">
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/actions" />
+
+        <activity
+            android:name=".Fragments.BmiActivity"
+            android:label="@string/title_activity_bml"
+            android:theme="@style/AppTheme.NoActionBar.NoActionBar" />
+        <activity android:name=".Functions.FoodRecipe.DIYRecipe.DIY_Create_Recipe" />
+        <activity android:name=".Functions.FoodRecipe.DIYRecipe.DIY_Show_Recipe" />
+        <activity android:name=".Functions.FoodRecipe.foodrecipes.FoodrecipeActivity" />
+        <activity android:name=".Functions.FoodRecipe.foodrecipes.FoodreicpeFunction" />
+        <activity android:name=".Functions.FoodRecipe.FoodNutrtionSearch.healthyfood" />
+        <activity android:name=".Functions.Reminder.Reminderss" />
+        <activity android:name=".Functions.WorkoutCategories.LegDetails.Preworkout_leg" />
+        <activity android:name=".Functions.WorkoutCategories.LegDetails.lunge" />
+        <activity android:name=".Functions.WorkoutCategories.LegDetails.pistolsquat" />
+        <activity android:name=".Functions.WorkoutCategories.LegDetails.sidelunge" />
+        <activity android:name=".Functions.WorkoutCategories.LegDetails.squatjump" />
+        <activity android:name=".Functions.WorkoutCategories.LegDetails.squat" />
+        <activity android:name=".Functions.WorkoutCategories.ChestDetails.declinepushup" />
+        <activity android:name=".Functions.WorkoutCategories.ChestDetails.inclinepushup" />
+        <activity android:name=".Functions.WorkoutCategories.ChestDetails.dpi" />
+        <activity android:name=".Functions.WorkoutCategories.ChestDetails.aspi" />
+        <activity android:name=".Functions.WorkoutCategories.ChestDetails.widepushup" />
+        <activity android:name=".Functions.WorkoutCategories.ChestDetails.Preworkout_chest" />
+        <activity android:name=".Functions.WorkoutCategories.ArmDetails.tricepdips" />
+        <activity android:name=".Functions.WorkoutCategories.ArmDetails.pushup" />
+        <activity android:name=".Functions.WorkoutCategories.ArmDetails.superman" />
+        <activity android:name=".Functions.WorkoutCategories.ArmDetails.plank" />
+        <activity android:name=".Functions.WorkoutCategories.ArmDetails.armstretch" />
+        <activity android:name=".Functions.WorkoutCategories.ArmDetails.ArmCircle" />
+        <activity android:name=".Functions.WorkoutCategories.ArmDetails.Preworkout_arm" />
+        <activity android:name=".Functions.WorkoutCategories.ArmDetails.ArmWorkout" />
+        <activity android:name=".Functions.WorkoutCategories.AbsDetails.sideplankright" />
+        <activity android:name=".Functions.WorkoutCategories.AbsDetails.sideplankleft" />
+        <activity android:name=".Functions.WorkoutCategories.AbsDetails.MountainClimbers" />
+        <activity android:name=".Functions.WorkoutCategories.AbsDetails.BicycleKicks" />
+        <activity android:name=".Functions.WorkoutCategories.AbsDetails.Plank" />
+        <activity android:name=".Functions.WorkoutCategories.AbsDetails.Jumpingjack" />
+        <activity android:name=".Functions.WorkoutCategories.AbsDetails.Preworkout" />
+        <activity android:name=".Functions.WorkoutCategories.AbsDetails.Absworkout" />
+        <activity android:name=".Functions.WorkoutCategories.LegDetails.Legworkout" />
+        <activity android:name=".Functions.WorkoutCategories.ChestDetails.ChestWorkout" />
+        <activity android:name=".Functions.FoodRecipe.Nutrition" />
+        <activity android:name=".Functions.TipsFunction.TipsActivity" />
+        <activity
+            android:name=".Functions.TipsFunction.TipsFunction"
+            android:parentActivityName=".MainInterface.Home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Functions.WorkoutCategories.WorkOut"
+            android:parentActivityName=".MainInterface.Home"
+            android:screenOrientation="portrait" />
+        <activity android:name=".EditPassword" />
+        <activity
+            android:name=".Fragments.ProfileFrag"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".LoginAndRegister.ForgotPassword" />
+        <activity android:name=".LoginAndRegister.SignUp" />
+        <activity android:name=".MainInterface.Home" />
+        <activity android:name=".LoginAndRegister.Login" />
+        <activity android:name=".LoginAndRegister.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Functions.Reminder.ReminderAddActivity" />
+        <activity
+            android:name=".Functions.Reminder.ReminderEditActivity"
+            android:label="@string/title_activity_edit_reminder" />
+
+        <receiver android:name=".Functions.Reminder.AlarmReceiver" />
+        <receiver android:name=".Functions.Reminder.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

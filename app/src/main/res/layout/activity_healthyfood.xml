@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Functions.FoodRecipe.FoodNutrtionSearch.healthyfood">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/searchback_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-6dp"
+        android:layout_marginTop="-4dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+    <com.mancj.materialsearchbar.MaterialSearchBar
+        android:id="@+id/searchbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/h1_toolbar"
+        android:layout_marginTop="2dp"
+        app:mt_hint="Search"
+        app:mt_speechMode="false">
+
+    </com.mancj.materialsearchbar.MaterialSearchBar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyce_search"
+        android:layout_width="match_parent"
+        android:layout_height="385dp"
+        android:layout_below="@id/searchbar"
+      >
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

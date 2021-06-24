@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+app:cardBackgroundColor="@color/md_light_blue_400"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="8dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/date"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_height="76dp"
+       >
+
+
+        <ImageView
+            android:id="@+id/date_icon"
+            android:layout_width="54dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/ic_baseline_search_242" />
+
+        <TextView
+            android:id="@+id/showname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/date_icon"
+            android:ellipsize="end"
+            android:text="Chicken Salad Asian"
+            android:textColor="@color/md_black_1000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/calorieview"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@+id/showname"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="27dp"
+            android:layout_toEndOf="@+id/date_icon"
+            android:text="Calories"
+            android:textColor="@color/md_black_1000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/showcalorie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="87dp"
+            android:layout_marginEnd="236dp"
+            android:layout_marginBottom="3dp"
+            android:layout_toEndOf="@+id/calorieview"
+            android:gravity="center"
+            android:text="12"
+            android:textColor="@color/md_black_1000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/sugarcontain"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@+id/showname"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="28dp"
+            android:layout_toEndOf="@+id/calorieview"
+            android:text="Sugar"
+            android:textColor="@color/md_black_1000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/showsugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="192dp"
+            android:layout_marginBottom="3dp"
+            android:gravity="center"
+            android:text="12"
+            android:textColor="@color/md_black_1000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/Proteinn"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@+id/showname"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="27dp"
+            android:layout_toEndOf="@+id/sugarcontain"
+            android:text="Protein"
+            android:textColor="@color/md_black_1000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/showprotein"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="139dp"
+            android:layout_marginBottom="3dp"
+            android:gravity="center"
+            android:text="12"
+            android:textColor="@color/md_black_1000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/fatcontain"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@+id/showname"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="27dp"
+            android:layout_toEndOf="@+id/Proteinn"
+            android:text="Fats"
+            android:textColor="@color/md_black_1000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/showfat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="88dp"
+            android:layout_marginBottom="3dp"
+            android:gravity="center"
+            android:text="12"
+            android:textColor="@color/md_black_1000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/carboh"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@+id/showname"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="27dp"
+            android:layout_toEndOf="@+id/fatcontain"
+            android:text="Carbohydrate"
+            android:textColor="@color/md_black_1000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/showcarbo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="3dp"
+            android:gravity="center"
+            android:text="12"
+            android:textColor="@color/md_black_1000"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

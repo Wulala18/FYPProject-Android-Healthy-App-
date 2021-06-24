@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<item android:title="Main">
+    <menu>
+    <item android:id="@+id/nav_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/home"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+        <item android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_baseline_people_24"
+            android:title="@string/profile"
+            android:orderInCategory="100"
+            app:showAsAction="never" />
+
+
+
+        <item android:id="@+id/nav_Calories"
+            android:icon="@drawable/progress"
+            android:title="B.B.C Calculator"
+            android:orderInCategory="100"
+            app:showAsAction="never" />
+
+
+
+    </menu>
+</item>
+
+    <item android:title = "@string/others_txtx">
+        <menu>
+
+            <item android:id="@+id/nav_helpcenter"
+                android:icon="@drawable/ic_baseline_report_24"
+                android:title="@string/contact_us"
+                android:orderInCategory="100"
+                app:showAsAction="never" />
+
+
+    <item android:id="@+id/nav_logout"
+        android:icon="@drawable/logout"
+        android:title="@string/log_out"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+        </menu>
+    </item>
+
+
+
+</menu>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_blue_grey_300"
+    android:fitsSystemWindows="true"
+    tools:context=".Functions.FoodRecipe.DIYRecipe.DIY_Create_Recipe">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/editrecipe_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+    <TextView
+        android:id="@+id/titlerecipeigreditens"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_recipename"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="11dp"
+        android:gravity="center"
+        android:paddingTop="@dimen/_2sdp"
+        android:text="INgredietns"
+        android:textAllCaps="true"
+        android:textColor="@color/md_blue_700"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_ingredientss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titlerecipeigreditens"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_2sdp"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_ingredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Ingredients"
+            android:maxLines="3"
+            android:padding="@dimen/_5sdp"
+            android:text=""
+            android:textColor="@color/md_black_1000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/instructionsrecipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cv_ingredientss"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="Instructions"
+        android:textAllCaps="true"
+        android:textColor="@color/md_blue_700"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/instructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/instructionsrecipe"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_instruction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:text=""
+            android:hint="Enter Instructions"
+            android:textColor="@color/md_black_1000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <EditText
+        android:id="@+id/edit_recipename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/h1_toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="@dimen/_62sdp"
+        android:layout_marginEnd="@dimen/_22sdp"
+        android:gravity="center"
+        android:text=""
+        android:hint="Enter Recipe Title"
+        android:textColor="@color/md_black_1000"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/svrecipe_Btn"
+        android:layout_width="@dimen/_344sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/instructions"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/_44sdp"
+        android:layout_marginTop="@dimen/_53sdp"
+        android:layout_marginEnd="@dimen/_44sdp"
+        android:background="@drawable/button_round"
+        android:text="Save"
+        app:layout_constraintBottom_toTopOf="@+id/h1_toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</RelativeLayout>
+
+

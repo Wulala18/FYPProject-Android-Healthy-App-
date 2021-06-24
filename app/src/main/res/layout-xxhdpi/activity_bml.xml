@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.BmiActivity">
+
+
+  <com.google.android.material.appbar.AppBarLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+  <androidx.appcompat.widget.Toolbar
+      android:id="@+id/bml_toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/colorPrimary"
+      />
+
+<com.google.android.material.tabs.TabLayout
+    android:id="@+id/tab_layour"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:tabMode="fixed"
+    android:background="@color/white"
+    app:tabIndicatorColor="@color/md_blue_700"
+    app:tabSelectedTextColor="@color/md_blue_700"
+    >
+
+
+
+  <com.google.android.material.tabs.TabItem
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:icon="@drawable/bml"
+      android:text="BMR Result"
+      />
+
+  <com.google.android.material.tabs.TabItem
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:icon="@drawable/ic_baseline_fact_check_24"
+      android:text="Calories Count"
+      />
+
+
+
+
+
+</com.google.android.material.tabs.TabLayout>
+
+  </com.google.android.material.appbar.AppBarLayout>
+
+  <androidx.viewpager.widget.ViewPager
+    android:id="@+id/view_pager"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+    app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+  </androidx.viewpager.widget.ViewPager>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
